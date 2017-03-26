@@ -5,8 +5,8 @@
 </ion-header>
 
 <ion-content class="page-home-background page-home-text-align">
-  <label class="page-home-timer-text">{{ time }}</label>
+  <label class="page-home-timer-text">{{ minutes }} : {{ seconds }}</label>
 </ion-content>
 <ion-footer>
-  <button class="page-home-button-full" ion-button color="secondary" full>START</button>
+  <button (click)="startTimer(20)" class="page-home-button-full" ion-button color="secondary" full>START</button>
 </ion-footer>
